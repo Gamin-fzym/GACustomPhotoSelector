@@ -35,6 +35,7 @@
 		E2D9B0DA229D1EF000CA0268 /* GACustomAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B0C8229D1EF000CA0268 /* GACustomAlbumCell.xib */; };
 		E2D9B0DB229D1EF000CA0268 /* GACustomSelectPICCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0CA229D1EF000CA0268 /* GACustomSelectPICCell.m */; };
 		E2D9B0DC229D1EF000CA0268 /* GACustomSelectPICCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B0CB229D1EF000CA0268 /* GACustomSelectPICCell.xib */; };
+		E2F693AB236EDF1A002462D4 /* UIViewController+Present.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F693AA236EDF1A002462D4 /* UIViewController+Present.m */; };
 		E2F78B4521840A39005CA3F4 /* LLSimpleCamera+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F78B2821840A39005CA3F4 /* LLSimpleCamera+Helper.m */; };
 		E2F78B4621840A39005CA3F4 /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F78B2A21840A39005CA3F4 /* LLSimpleCamera.m */; };
 		E2F78B4721840A39005CA3F4 /* PureCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2F78B2B21840A39005CA3F4 /* PureCamera.bundle */; };
@@ -129,6 +130,8 @@
 		E2D9B0CB229D1EF000CA0268 /* GACustomSelectPICCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomSelectPICCell.xib; sourceTree = "<group>"; };
 		E2E4D7C72186AD380076E5B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		E2E4D7C82186AD380076E5B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E2F693A9236EDF1A002462D4 /* UIViewController+Present.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Present.h"; sourceTree = "<group>"; };
+		E2F693AA236EDF1A002462D4 /* UIViewController+Present.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Present.m"; sourceTree = "<group>"; };
 		E2F78B2721840A39005CA3F4 /* LLSimpleCamera+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LLSimpleCamera+Helper.h"; sourceTree = "<group>"; };
 		E2F78B2821840A39005CA3F4 /* LLSimpleCamera+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LLSimpleCamera+Helper.m"; sourceTree = "<group>"; };
 		E2F78B2921840A39005CA3F4 /* LLSimpleCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSimpleCamera.h; sourceTree = "<group>"; };
@@ -277,7 +280,7 @@
 				E2D9B0B7229D1EF000CA0268 /* CustomPicture.bundle */,
 				E2D9B0AB229D1EF000CA0268 /* Controllers */,
 				E2D9B0B8229D1EF000CA0268 /* Models */,
-				E2D9B0BD229D1EF000CA0268 /* Tools */,
+				E2D9B0BD229D1EF000CA0268 /* Other */,
 				E2D9B0C5229D1EF000CA0268 /* Views */,
 			);
 			path = GACustomSelectPIC;
@@ -312,18 +315,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		E2D9B0BD229D1EF000CA0268 /* Tools */ = {
+		E2D9B0BD229D1EF000CA0268 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				E2D9B0BE229D1EF000CA0268 /* CALayer+XibBorderColor.h */,
 				E2D9B0BF229D1EF000CA0268 /* CALayer+XibBorderColor.m */,
+				E2F693A9236EDF1A002462D4 /* UIViewController+Present.h */,
+				E2F693AA236EDF1A002462D4 /* UIViewController+Present.m */,
 				E2D9B0C0229D1EF000CA0268 /* GACustomSelectProtocol.h */,
 				E2D9B0C1229D1EF000CA0268 /* GAPublicMethod.h */,
 				E2D9B0C2229D1EF000CA0268 /* GAPublicMethod.m */,
 				E2D9B0C3229D1EF000CA0268 /* GASelectCountShare.h */,
 				E2D9B0C4229D1EF000CA0268 /* GASelectCountShare.m */,
 			);
-			path = Tools;
+			path = Other;
 			sourceTree = "<group>";
 		};
 		E2D9B0C5229D1EF000CA0268 /* Views */ = {
@@ -478,6 +483,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = E2D48B2B2183025100BD7EEF;
 			productRefGroup = E2D48B352183025100BD7EEF /* Products */;
@@ -548,6 +554,7 @@
 				E2F78B4A21840A39005CA3F4 /* TOActivityCroppedImageProvider.m in Sources */,
 				E2D48BAB2183067000BD7EEF /* ListViewController.m in Sources */,
 				E2D48B472183025300BD7EEF /* main.m in Sources */,
+				E2F693AB236EDF1A002462D4 /* UIViewController+Present.m in Sources */,
 				E2F78BB621846517005CA3F4 /* SVProgressAnimatedView.m in Sources */,
 				E2F78B5421840A39005CA3F4 /* UIImage+FixOrientation.m in Sources */,
 				E2D9B0D6229D1EF000CA0268 /* CALayer+XibBorderColor.m in Sources */,

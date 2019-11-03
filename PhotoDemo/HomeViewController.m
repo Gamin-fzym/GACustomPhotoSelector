@@ -17,6 +17,7 @@
 #import "GAPublicMethod.h"
 
 @interface HomeViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, TOCropViewControllerDelegate, GACustomSelectProtocol>
+
 @property (weak, nonatomic) IBOutlet UIButton *photoBut;
 @property (strong, nonatomic) UIImage *displayImg;
 @property (strong, nonatomic) UIImagePickerController *ipc;

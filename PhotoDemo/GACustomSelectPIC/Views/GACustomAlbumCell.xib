@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GACustomAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1IM-6Y-OQL">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LX-aO-fK2">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uez-6m-iFy">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Uez-6m-iFy" firstAttribute="leading" secondItem="4LX-aO-fK2" secondAttribute="leading" id="IAM-1b-xvB"/>
+                                    <constraint firstItem="Uez-6m-iFy" firstAttribute="centerX" secondItem="4LX-aO-fK2" secondAttribute="centerX" id="ITE-Jq-vHW"/>
+                                    <constraint firstItem="Uez-6m-iFy" firstAttribute="top" secondItem="4LX-aO-fK2" secondAttribute="top" id="MFK-av-s43"/>
+                                    <constraint firstItem="Uez-6m-iFy" firstAttribute="centerY" secondItem="4LX-aO-fK2" secondAttribute="centerY" id="X9s-uf-IYX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uez-6m-iFy" secondAttribute="bottom" id="le1-yS-9md"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uez-6m-iFy" secondAttribute="trailing" id="udf-jh-4ww"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCO-yN-nee" userLabel="View1">
+                                <rect key="frame" x="54" y="0.0" width="26" height="26"/>
+                                <subviews>
+                                    <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Qh-oZ-Wdf">
+                                        <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWO-q1-yb5">
+                                        <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" backgroundImage="rj_cell_normal.png"/>
+                                        <state key="selected" backgroundImage="rj_cell_selected.png"/>
+                                        <connections>
+                                            <action selector="tapMarkIVAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4HH-Pp-rcL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="amT-nq-4FF"/>
+                                    <constraint firstAttribute="width" secondItem="VCO-yN-nee" secondAttribute="height" multiplier="1:1" id="hRa-6S-kOP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="13"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VCO-yN-nee" firstAttribute="top" secondItem="1IM-6Y-OQL" secondAttribute="top" id="3XU-ua-5vM"/>
+                            <constraint firstAttribute="trailing" secondItem="VCO-yN-nee" secondAttribute="trailing" id="A0Q-XX-5VR"/>
+                            <constraint firstItem="4LX-aO-fK2" firstAttribute="top" secondItem="1IM-6Y-OQL" secondAttribute="top" id="bxT-GW-z4s"/>
+                            <constraint firstItem="4LX-aO-fK2" firstAttribute="leading" secondItem="1IM-6Y-OQL" secondAttribute="leading" id="iT4-2R-ZKF"/>
+                            <constraint firstAttribute="bottom" secondItem="4LX-aO-fK2" secondAttribute="bottom" id="p5H-uH-ObM"/>
+                            <constraint firstAttribute="trailing" secondItem="4LX-aO-fK2" secondAttribute="trailing" id="wZ6-Xd-YaJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1IM-6Y-OQL" secondAttribute="trailing" id="V3i-vw-4SE"/>
+                <constraint firstAttribute="bottom" secondItem="1IM-6Y-OQL" secondAttribute="bottom" id="ltb-Ia-0vV"/>
+                <constraint firstItem="1IM-6Y-OQL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tag-Yw-6T6"/>
+                <constraint firstItem="1IM-6Y-OQL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="x1X-gP-w3V"/>
+            </constraints>
+            <connections>
+                <outlet property="heightConstraint" destination="amT-nq-4FF" id="25e-NX-IOb"/>
+                <outlet property="imageView" destination="Uez-6m-iFy" id="PHu-xK-4s9"/>
+                <outlet property="markIV" destination="qWO-q1-yb5" id="uHf-Du-gZG"/>
+                <outlet property="rightConstraint" destination="A0Q-XX-5VR" id="VBJ-Kp-AWV"/>
+                <outlet property="scrollView" destination="4LX-aO-fK2" id="JXn-6g-lW9"/>
+                <outlet property="topConstraint" destination="3XU-ua-5vM" id="Q0d-AQ-XbM"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="46.776611694152926"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="rj_cell_normal.png" width="30" height="30"/>
+        <image name="rj_cell_selected.png" width="30" height="30"/>
+    </resources>
+</document>

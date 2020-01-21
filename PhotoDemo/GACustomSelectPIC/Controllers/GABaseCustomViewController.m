@@ -9,7 +9,7 @@
 #import "GABaseCustomViewController.h"
 #import "GAPublicMethod.h"
 #import "UIImage+FixOrientation.h"
-#import "HomeViewController.h"
+#import "GACustomSelectPIC.h"
 
 @interface GABaseCustomViewController ()
 
@@ -91,13 +91,20 @@
         [self.delegate customSelectAssets:saveMArr];
     }
     
-    //[self.navigationController popViewControllerAnimated:YES];
     NSArray *navs = [self.navigationController viewControllers];
+    NSInteger firstIndex = 0;
     for (int i = 0 ; i < navs.count ; i ++) {
         UIViewController *vc = [navs objectAtIndex:i];
-        if ([[vc class] isSubclassOfClass:[HomeViewController class]]) {
-            [self.navigationController popToViewController:vc animated:YES];
+        if ([vc isKindOfClass:[GACustomSelectPIC class]]) {
+            firstIndex = i;
+            break;
         }
+    }
+    if (firstIndex > 0) {
+        UIViewController *frontVC = [navs objectAtIndex:firstIndex-1];
+        [self.navigationController popToViewController:frontVC animated:YES];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 

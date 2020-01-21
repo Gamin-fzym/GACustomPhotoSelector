@@ -24,8 +24,14 @@
 #import "TOCropOverlayView.h"
 
 #define TOCROPVIEW_BACKGROUND_COLOR [UIColor colorWithWhite:0.12f alpha:1.0f]
+#define TO_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+// iPhoneX系列
+#define TO_iPhoneX (TO_IS_IPHONE && TO_SCREEN_HEIGHT>=812)
+// 判断当前的iPhone设备/系统版本
+#define TO_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 
-static const CGFloat kTOCropViewPadding = 14.0f;
+static const CGFloat kTOCropViewPadding = 20.0f;
+static const CGFloat kTOCropViewIphoneXPadding = 44.0f;
 static const NSTimeInterval kTOCropTimerDuration = 0.8f;
 static const CGFloat kTOCropViewMinimumBoxSize = 42.0f;
 
@@ -1191,9 +1197,13 @@ typedef NS_ENUM(NSInteger, TOCropViewOverlayEdge) {
 {
     CGRect contentRect = CGRectZero;
     contentRect.origin.x = kTOCropViewPadding + self.cropRegionInsets.left;
-    contentRect.origin.y = kTOCropViewPadding + self.cropRegionInsets.top;
+    float theY = kTOCropViewPadding;
+    if (TO_iPhoneX) {
+        theY = kTOCropViewIphoneXPadding;
+    }
+    contentRect.origin.y = theY + self.cropRegionInsets.top;
     contentRect.size.width = CGRectGetWidth(self.bounds) - ((kTOCropViewPadding * 2) + self.cropRegionInsets.left + self.cropRegionInsets.right);
-    contentRect.size.height = CGRectGetHeight(self.bounds) - ((kTOCropViewPadding * 2) + self.cropRegionInsets.top + self.cropRegionInsets.bottom);
+    contentRect.size.height = CGRectGetHeight(self.bounds) - ((theY * 2) + self.cropRegionInsets.top + self.cropRegionInsets.bottom);
     return contentRect;
 }
 

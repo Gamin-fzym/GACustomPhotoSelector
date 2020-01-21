@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18FD9FF623D6A29D00843621 /* CALayer+XibBorderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FD623D6A29D00843621 /* CALayer+XibBorderColor.m */; };
+		18FD9FF723D6A29D00843621 /* GASelectCountShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FDB23D6A29D00843621 /* GASelectCountShare.m */; };
+		18FD9FF823D6A29D00843621 /* GAPublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FDC23D6A29D00843621 /* GAPublicMethod.m */; };
+		18FD9FF923D6A29D00843621 /* CustomPicture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18FD9FDD23D6A29D00843621 /* CustomPicture.bundle */; };
+		18FD9FFA23D6A29D00843621 /* GACustomSelectPICModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FDF23D6A29D00843621 /* GACustomSelectPICModel.m */; };
+		18FD9FFB23D6A29D00843621 /* GACustomAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FE223D6A29D00843621 /* GACustomAlbumModel.m */; };
+		18FD9FFC23D6A29D00843621 /* GACustomAlbumList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FD9FE423D6A29D00843621 /* GACustomAlbumList.xib */; };
+		18FD9FFD23D6A29D00843621 /* GABaseCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FE523D6A29D00843621 /* GABaseCustomViewController.m */; };
+		18FD9FFE23D6A29D00843621 /* GACustomSelectPIC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FD9FE723D6A29D00843621 /* GACustomSelectPIC.xib */; };
+		18FD9FFF23D6A29D00843621 /* GACustomAlbumDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FD9FE823D6A29D00843621 /* GACustomAlbumDetails.xib */; };
+		18FDA00023D6A29D00843621 /* GACustomSelectPIC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FEC23D6A29D00843621 /* GACustomSelectPIC.m */; };
+		18FDA00123D6A29D00843621 /* GACustomAlbumDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FED23D6A29D00843621 /* GACustomAlbumDetails.m */; };
+		18FDA00223D6A29D00843621 /* GACustomAlbumList.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FEE23D6A29D00843621 /* GACustomAlbumList.m */; };
+		18FDA00323D6A29D00843621 /* GACustomAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FF023D6A29D00843621 /* GACustomAlbumCell.m */; };
+		18FDA00423D6A29D00843621 /* GACustomAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FD9FF323D6A29D00843621 /* GACustomAlbumCell.xib */; };
+		18FDA00523D6A29D00843621 /* GACustomSelectPICCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FD9FF423D6A29D00843621 /* GACustomSelectPICCell.xib */; };
+		18FDA00623D6A29D00843621 /* GACustomSelectPICCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FD9FF523D6A29D00843621 /* GACustomSelectPICCell.m */; };
+		18FDA00923D6A45700843621 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA00823D6A45700843621 /* UIView+Toast.m */; };
+		18FDA00C23D6A95000843621 /* UIViewController+Present.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA00B23D6A95000843621 /* UIViewController+Present.m */; };
 		E2D48B392183025100BD7EEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D48B382183025100BD7EEF /* AppDelegate.m */; };
 		E2D48B3F2183025100BD7EEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D48B3D2183025100BD7EEF /* Main.storyboard */; };
 		E2D48B412183025300BD7EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D48B402183025300BD7EEF /* Assets.xcassets */; };
@@ -18,24 +37,6 @@
 		E2D48BAC2183067000BD7EEF /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D48BAA2183067000BD7EEF /* ListViewController.xib */; };
 		E2D48BB021830A7300BD7EEF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D48BAE21830A7300BD7EEF /* HomeViewController.m */; };
 		E2D48BB121830A7300BD7EEF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D48BAF21830A7300BD7EEF /* HomeViewController.xib */; };
-		E2D9B0CC229D1EF000CA0268 /* GABaseCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0AD229D1EF000CA0268 /* GABaseCustomViewController.m */; };
-		E2D9B0CD229D1EF000CA0268 /* GACustomAlbumDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0AF229D1EF000CA0268 /* GACustomAlbumDetails.m */; };
-		E2D9B0CE229D1EF000CA0268 /* GACustomAlbumDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B0B0229D1EF000CA0268 /* GACustomAlbumDetails.xib */; };
-		E2D9B0CF229D1EF000CA0268 /* GACustomAlbumList.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0B2229D1EF000CA0268 /* GACustomAlbumList.m */; };
-		E2D9B0D0229D1EF000CA0268 /* GACustomAlbumList.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B0B3229D1EF000CA0268 /* GACustomAlbumList.xib */; };
-		E2D9B0D1229D1EF000CA0268 /* GACustomSelectPIC.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0B5229D1EF000CA0268 /* GACustomSelectPIC.m */; };
-		E2D9B0D2229D1EF000CA0268 /* GACustomSelectPIC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B0B6229D1EF000CA0268 /* GACustomSelectPIC.xib */; };
-		E2D9B0D3229D1EF000CA0268 /* CustomPicture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B0B7229D1EF000CA0268 /* CustomPicture.bundle */; };
-		E2D9B0D4229D1EF000CA0268 /* GACustomAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0BA229D1EF000CA0268 /* GACustomAlbumModel.m */; };
-		E2D9B0D5229D1EF000CA0268 /* GACustomSelectPICModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0BC229D1EF000CA0268 /* GACustomSelectPICModel.m */; };
-		E2D9B0D6229D1EF000CA0268 /* CALayer+XibBorderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0BF229D1EF000CA0268 /* CALayer+XibBorderColor.m */; };
-		E2D9B0D7229D1EF000CA0268 /* GAPublicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0C2229D1EF000CA0268 /* GAPublicMethod.m */; };
-		E2D9B0D8229D1EF000CA0268 /* GASelectCountShare.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0C4229D1EF000CA0268 /* GASelectCountShare.m */; };
-		E2D9B0D9229D1EF000CA0268 /* GACustomAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0C7229D1EF000CA0268 /* GACustomAlbumCell.m */; };
-		E2D9B0DA229D1EF000CA0268 /* GACustomAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B0C8229D1EF000CA0268 /* GACustomAlbumCell.xib */; };
-		E2D9B0DB229D1EF000CA0268 /* GACustomSelectPICCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D9B0CA229D1EF000CA0268 /* GACustomSelectPICCell.m */; };
-		E2D9B0DC229D1EF000CA0268 /* GACustomSelectPICCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D9B0CB229D1EF000CA0268 /* GACustomSelectPICCell.xib */; };
-		E2F693AB236EDF1A002462D4 /* UIViewController+Present.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F693AA236EDF1A002462D4 /* UIViewController+Present.m */; };
 		E2F78B4521840A39005CA3F4 /* LLSimpleCamera+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F78B2821840A39005CA3F4 /* LLSimpleCamera+Helper.m */; };
 		E2F78B4621840A39005CA3F4 /* LLSimpleCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F78B2A21840A39005CA3F4 /* LLSimpleCamera.m */; };
 		E2F78B4721840A39005CA3F4 /* PureCamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2F78B2B21840A39005CA3F4 /* PureCamera.bundle */; };
@@ -78,6 +79,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18FD9FD623D6A29D00843621 /* CALayer+XibBorderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibBorderColor.m"; sourceTree = "<group>"; };
+		18FD9FD723D6A29D00843621 /* GASelectCountShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASelectCountShare.h; sourceTree = "<group>"; };
+		18FD9FD823D6A29D00843621 /* GACustomSelectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomSelectProtocol.h; sourceTree = "<group>"; };
+		18FD9FD923D6A29D00843621 /* GAPublicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAPublicMethod.h; sourceTree = "<group>"; };
+		18FD9FDA23D6A29D00843621 /* CALayer+XibBorderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibBorderColor.h"; sourceTree = "<group>"; };
+		18FD9FDB23D6A29D00843621 /* GASelectCountShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASelectCountShare.m; sourceTree = "<group>"; };
+		18FD9FDC23D6A29D00843621 /* GAPublicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAPublicMethod.m; sourceTree = "<group>"; };
+		18FD9FDD23D6A29D00843621 /* CustomPicture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CustomPicture.bundle; sourceTree = "<group>"; };
+		18FD9FDF23D6A29D00843621 /* GACustomSelectPICModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomSelectPICModel.m; sourceTree = "<group>"; };
+		18FD9FE023D6A29D00843621 /* GACustomAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomAlbumModel.h; sourceTree = "<group>"; };
+		18FD9FE123D6A29D00843621 /* GACustomSelectPICModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomSelectPICModel.h; sourceTree = "<group>"; };
+		18FD9FE223D6A29D00843621 /* GACustomAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomAlbumModel.m; sourceTree = "<group>"; };
+		18FD9FE423D6A29D00843621 /* GACustomAlbumList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomAlbumList.xib; sourceTree = "<group>"; };
+		18FD9FE523D6A29D00843621 /* GABaseCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABaseCustomViewController.m; sourceTree = "<group>"; };
+		18FD9FE623D6A29D00843621 /* GACustomSelectPIC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomSelectPIC.h; sourceTree = "<group>"; };
+		18FD9FE723D6A29D00843621 /* GACustomSelectPIC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomSelectPIC.xib; sourceTree = "<group>"; };
+		18FD9FE823D6A29D00843621 /* GACustomAlbumDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomAlbumDetails.xib; sourceTree = "<group>"; };
+		18FD9FE923D6A29D00843621 /* GACustomAlbumList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomAlbumList.h; sourceTree = "<group>"; };
+		18FD9FEA23D6A29D00843621 /* GACustomAlbumDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomAlbumDetails.h; sourceTree = "<group>"; };
+		18FD9FEB23D6A29D00843621 /* GABaseCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABaseCustomViewController.h; sourceTree = "<group>"; };
+		18FD9FEC23D6A29D00843621 /* GACustomSelectPIC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomSelectPIC.m; sourceTree = "<group>"; };
+		18FD9FED23D6A29D00843621 /* GACustomAlbumDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomAlbumDetails.m; sourceTree = "<group>"; };
+		18FD9FEE23D6A29D00843621 /* GACustomAlbumList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomAlbumList.m; sourceTree = "<group>"; };
+		18FD9FF023D6A29D00843621 /* GACustomAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomAlbumCell.m; sourceTree = "<group>"; };
+		18FD9FF123D6A29D00843621 /* GACustomSelectPICCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomSelectPICCell.h; sourceTree = "<group>"; };
+		18FD9FF223D6A29D00843621 /* GACustomAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomAlbumCell.h; sourceTree = "<group>"; };
+		18FD9FF323D6A29D00843621 /* GACustomAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomAlbumCell.xib; sourceTree = "<group>"; };
+		18FD9FF423D6A29D00843621 /* GACustomSelectPICCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomSelectPICCell.xib; sourceTree = "<group>"; };
+		18FD9FF523D6A29D00843621 /* GACustomSelectPICCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomSelectPICCell.m; sourceTree = "<group>"; };
+		18FDA00723D6A45700843621 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		18FDA00823D6A45700843621 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		18FDA00A23D6A95000843621 /* UIViewController+Present.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Present.h"; sourceTree = "<group>"; };
+		18FDA00B23D6A95000843621 /* UIViewController+Present.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Present.m"; sourceTree = "<group>"; };
 		E2D48B342183025100BD7EEF /* PhotoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D48B372183025100BD7EEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E2D48B382183025100BD7EEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -99,39 +133,8 @@
 		E2D48BAD21830A7300BD7EEF /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		E2D48BAE21830A7300BD7EEF /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		E2D48BAF21830A7300BD7EEF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		E2D9B0AC229D1EF000CA0268 /* GABaseCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GABaseCustomViewController.h; sourceTree = "<group>"; };
-		E2D9B0AD229D1EF000CA0268 /* GABaseCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GABaseCustomViewController.m; sourceTree = "<group>"; };
-		E2D9B0AE229D1EF000CA0268 /* GACustomAlbumDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomAlbumDetails.h; sourceTree = "<group>"; };
-		E2D9B0AF229D1EF000CA0268 /* GACustomAlbumDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomAlbumDetails.m; sourceTree = "<group>"; };
-		E2D9B0B0229D1EF000CA0268 /* GACustomAlbumDetails.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomAlbumDetails.xib; sourceTree = "<group>"; };
-		E2D9B0B1229D1EF000CA0268 /* GACustomAlbumList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomAlbumList.h; sourceTree = "<group>"; };
-		E2D9B0B2229D1EF000CA0268 /* GACustomAlbumList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomAlbumList.m; sourceTree = "<group>"; };
-		E2D9B0B3229D1EF000CA0268 /* GACustomAlbumList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomAlbumList.xib; sourceTree = "<group>"; };
-		E2D9B0B4229D1EF000CA0268 /* GACustomSelectPIC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomSelectPIC.h; sourceTree = "<group>"; };
-		E2D9B0B5229D1EF000CA0268 /* GACustomSelectPIC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomSelectPIC.m; sourceTree = "<group>"; };
-		E2D9B0B6229D1EF000CA0268 /* GACustomSelectPIC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomSelectPIC.xib; sourceTree = "<group>"; };
-		E2D9B0B7229D1EF000CA0268 /* CustomPicture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CustomPicture.bundle; sourceTree = "<group>"; };
-		E2D9B0B9229D1EF000CA0268 /* GACustomAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomAlbumModel.h; sourceTree = "<group>"; };
-		E2D9B0BA229D1EF000CA0268 /* GACustomAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomAlbumModel.m; sourceTree = "<group>"; };
-		E2D9B0BB229D1EF000CA0268 /* GACustomSelectPICModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomSelectPICModel.h; sourceTree = "<group>"; };
-		E2D9B0BC229D1EF000CA0268 /* GACustomSelectPICModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomSelectPICModel.m; sourceTree = "<group>"; };
-		E2D9B0BE229D1EF000CA0268 /* CALayer+XibBorderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibBorderColor.h"; sourceTree = "<group>"; };
-		E2D9B0BF229D1EF000CA0268 /* CALayer+XibBorderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibBorderColor.m"; sourceTree = "<group>"; };
-		E2D9B0C0229D1EF000CA0268 /* GACustomSelectProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomSelectProtocol.h; sourceTree = "<group>"; };
-		E2D9B0C1229D1EF000CA0268 /* GAPublicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAPublicMethod.h; sourceTree = "<group>"; };
-		E2D9B0C2229D1EF000CA0268 /* GAPublicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAPublicMethod.m; sourceTree = "<group>"; };
-		E2D9B0C3229D1EF000CA0268 /* GASelectCountShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GASelectCountShare.h; sourceTree = "<group>"; };
-		E2D9B0C4229D1EF000CA0268 /* GASelectCountShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GASelectCountShare.m; sourceTree = "<group>"; };
-		E2D9B0C6229D1EF000CA0268 /* GACustomAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomAlbumCell.h; sourceTree = "<group>"; };
-		E2D9B0C7229D1EF000CA0268 /* GACustomAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomAlbumCell.m; sourceTree = "<group>"; };
-		E2D9B0C8229D1EF000CA0268 /* GACustomAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomAlbumCell.xib; sourceTree = "<group>"; };
-		E2D9B0C9229D1EF000CA0268 /* GACustomSelectPICCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GACustomSelectPICCell.h; sourceTree = "<group>"; };
-		E2D9B0CA229D1EF000CA0268 /* GACustomSelectPICCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GACustomSelectPICCell.m; sourceTree = "<group>"; };
-		E2D9B0CB229D1EF000CA0268 /* GACustomSelectPICCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GACustomSelectPICCell.xib; sourceTree = "<group>"; };
 		E2E4D7C72186AD380076E5B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		E2E4D7C82186AD380076E5B7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		E2F693A9236EDF1A002462D4 /* UIViewController+Present.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Present.h"; sourceTree = "<group>"; };
-		E2F693AA236EDF1A002462D4 /* UIViewController+Present.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Present.m"; sourceTree = "<group>"; };
 		E2F78B2721840A39005CA3F4 /* LLSimpleCamera+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LLSimpleCamera+Helper.h"; sourceTree = "<group>"; };
 		E2F78B2821840A39005CA3F4 /* LLSimpleCamera+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LLSimpleCamera+Helper.m"; sourceTree = "<group>"; };
 		E2F78B2921840A39005CA3F4 /* LLSimpleCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSimpleCamera.h; sourceTree = "<group>"; };
@@ -202,6 +205,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18FD9FD423D6A29D00843621 /* GACustomSelectPIC */ = {
+			isa = PBXGroup;
+			children = (
+				18FD9FE323D6A29D00843621 /* Controllers */,
+				18FD9FEF23D6A29D00843621 /* Views */,
+				18FD9FDE23D6A29D00843621 /* Models */,
+				18FD9FD523D6A29D00843621 /* Other */,
+				18FD9FDD23D6A29D00843621 /* CustomPicture.bundle */,
+			);
+			path = GACustomSelectPIC;
+			sourceTree = "<group>";
+		};
+		18FD9FD523D6A29D00843621 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18FD9FD723D6A29D00843621 /* GASelectCountShare.h */,
+				18FD9FDB23D6A29D00843621 /* GASelectCountShare.m */,
+				18FD9FDA23D6A29D00843621 /* CALayer+XibBorderColor.h */,
+				18FD9FD623D6A29D00843621 /* CALayer+XibBorderColor.m */,
+				18FD9FD823D6A29D00843621 /* GACustomSelectProtocol.h */,
+				18FD9FD923D6A29D00843621 /* GAPublicMethod.h */,
+				18FD9FDC23D6A29D00843621 /* GAPublicMethod.m */,
+				18FDA00A23D6A95000843621 /* UIViewController+Present.h */,
+				18FDA00B23D6A95000843621 /* UIViewController+Present.m */,
+				18FDA00723D6A45700843621 /* UIView+Toast.h */,
+				18FDA00823D6A45700843621 /* UIView+Toast.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18FD9FDE23D6A29D00843621 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18FD9FE023D6A29D00843621 /* GACustomAlbumModel.h */,
+				18FD9FE223D6A29D00843621 /* GACustomAlbumModel.m */,
+				18FD9FE123D6A29D00843621 /* GACustomSelectPICModel.h */,
+				18FD9FDF23D6A29D00843621 /* GACustomSelectPICModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18FD9FE323D6A29D00843621 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18FD9FE623D6A29D00843621 /* GACustomSelectPIC.h */,
+				18FD9FEC23D6A29D00843621 /* GACustomSelectPIC.m */,
+				18FD9FE723D6A29D00843621 /* GACustomSelectPIC.xib */,
+				18FD9FE923D6A29D00843621 /* GACustomAlbumList.h */,
+				18FD9FEE23D6A29D00843621 /* GACustomAlbumList.m */,
+				18FD9FE423D6A29D00843621 /* GACustomAlbumList.xib */,
+				18FD9FEB23D6A29D00843621 /* GABaseCustomViewController.h */,
+				18FD9FE523D6A29D00843621 /* GABaseCustomViewController.m */,
+				18FD9FEA23D6A29D00843621 /* GACustomAlbumDetails.h */,
+				18FD9FED23D6A29D00843621 /* GACustomAlbumDetails.m */,
+				18FD9FE823D6A29D00843621 /* GACustomAlbumDetails.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18FD9FEF23D6A29D00843621 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18FD9FF223D6A29D00843621 /* GACustomAlbumCell.h */,
+				18FD9FF023D6A29D00843621 /* GACustomAlbumCell.m */,
+				18FD9FF323D6A29D00843621 /* GACustomAlbumCell.xib */,
+				18FD9FF123D6A29D00843621 /* GACustomSelectPICCell.h */,
+				18FD9FF523D6A29D00843621 /* GACustomSelectPICCell.m */,
+				18FD9FF423D6A29D00843621 /* GACustomSelectPICCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E2D48B2B2183025100BD7EEF = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +310,7 @@
 				E2D48BA92183067000BD7EEF /* ListViewController.m */,
 				E2D48BAA2183067000BD7EEF /* ListViewController.xib */,
 				E2D48B3D2183025100BD7EEF /* Main.storyboard */,
-				E2D9B0AA229D1EF000CA0268 /* GACustomSelectPIC */,
+				18FD9FD423D6A29D00843621 /* GACustomSelectPIC */,
 				E2F78BAA21846517005CA3F4 /* SVProgressHUD */,
 				E2F78B2621840A38005CA3F4 /* PureCamera */,
 				E2D48B402183025300BD7EEF /* Assets.xcassets */,
@@ -274,86 +349,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E2D9B0AA229D1EF000CA0268 /* GACustomSelectPIC */ = {
-			isa = PBXGroup;
-			children = (
-				E2D9B0B7229D1EF000CA0268 /* CustomPicture.bundle */,
-				E2D9B0AB229D1EF000CA0268 /* Controllers */,
-				E2D9B0B8229D1EF000CA0268 /* Models */,
-				E2D9B0BD229D1EF000CA0268 /* Other */,
-				E2D9B0C5229D1EF000CA0268 /* Views */,
-			);
-			path = GACustomSelectPIC;
-			sourceTree = "<group>";
-		};
-		E2D9B0AB229D1EF000CA0268 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				E2D9B0AC229D1EF000CA0268 /* GABaseCustomViewController.h */,
-				E2D9B0AD229D1EF000CA0268 /* GABaseCustomViewController.m */,
-				E2D9B0AE229D1EF000CA0268 /* GACustomAlbumDetails.h */,
-				E2D9B0AF229D1EF000CA0268 /* GACustomAlbumDetails.m */,
-				E2D9B0B0229D1EF000CA0268 /* GACustomAlbumDetails.xib */,
-				E2D9B0B1229D1EF000CA0268 /* GACustomAlbumList.h */,
-				E2D9B0B2229D1EF000CA0268 /* GACustomAlbumList.m */,
-				E2D9B0B3229D1EF000CA0268 /* GACustomAlbumList.xib */,
-				E2D9B0B4229D1EF000CA0268 /* GACustomSelectPIC.h */,
-				E2D9B0B5229D1EF000CA0268 /* GACustomSelectPIC.m */,
-				E2D9B0B6229D1EF000CA0268 /* GACustomSelectPIC.xib */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		E2D9B0B8229D1EF000CA0268 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E2D9B0B9229D1EF000CA0268 /* GACustomAlbumModel.h */,
-				E2D9B0BA229D1EF000CA0268 /* GACustomAlbumModel.m */,
-				E2D9B0BB229D1EF000CA0268 /* GACustomSelectPICModel.h */,
-				E2D9B0BC229D1EF000CA0268 /* GACustomSelectPICModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E2D9B0BD229D1EF000CA0268 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				E2D9B0BE229D1EF000CA0268 /* CALayer+XibBorderColor.h */,
-				E2D9B0BF229D1EF000CA0268 /* CALayer+XibBorderColor.m */,
-				E2F693A9236EDF1A002462D4 /* UIViewController+Present.h */,
-				E2F693AA236EDF1A002462D4 /* UIViewController+Present.m */,
-				E2D9B0C0229D1EF000CA0268 /* GACustomSelectProtocol.h */,
-				E2D9B0C1229D1EF000CA0268 /* GAPublicMethod.h */,
-				E2D9B0C2229D1EF000CA0268 /* GAPublicMethod.m */,
-				E2D9B0C3229D1EF000CA0268 /* GASelectCountShare.h */,
-				E2D9B0C4229D1EF000CA0268 /* GASelectCountShare.m */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		E2D9B0C5229D1EF000CA0268 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E2D9B0C6229D1EF000CA0268 /* GACustomAlbumCell.h */,
-				E2D9B0C7229D1EF000CA0268 /* GACustomAlbumCell.m */,
-				E2D9B0C8229D1EF000CA0268 /* GACustomAlbumCell.xib */,
-				E2D9B0C9229D1EF000CA0268 /* GACustomSelectPICCell.h */,
-				E2D9B0CA229D1EF000CA0268 /* GACustomSelectPICCell.m */,
-				E2D9B0CB229D1EF000CA0268 /* GACustomSelectPICCell.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		E2F78B2621840A38005CA3F4 /* PureCamera */ = {
 			isa = PBXGroup;
 			children = (
+				E2F78B2C21840A39005CA3F4 /* PureCamera.h */,
+				E2F78B2D21840A39005CA3F4 /* PureCamera.m */,
 				E2F78B2721840A39005CA3F4 /* LLSimpleCamera+Helper.h */,
 				E2F78B2821840A39005CA3F4 /* LLSimpleCamera+Helper.m */,
 				E2F78B2921840A39005CA3F4 /* LLSimpleCamera.h */,
 				E2F78B2A21840A39005CA3F4 /* LLSimpleCamera.m */,
 				E2F78B2B21840A39005CA3F4 /* PureCamera.bundle */,
-				E2F78B2C21840A39005CA3F4 /* PureCamera.h */,
-				E2F78B2D21840A39005CA3F4 /* PureCamera.m */,
 				E2F78B2E21840A39005CA3F4 /* PureCropVC.h */,
 				E2F78B2F21840A39005CA3F4 /* PureCropVC.m */,
 				E2F78B3021840A39005CA3F4 /* TOActivityCroppedImageProvider.h */,
@@ -504,18 +509,18 @@
 			files = (
 				E2D48B442183025300BD7EEF /* LaunchScreen.storyboard in Resources */,
 				E2D48BAC2183067000BD7EEF /* ListViewController.xib in Resources */,
-				E2D9B0D0229D1EF000CA0268 /* GACustomAlbumList.xib in Resources */,
+				18FD9FFC23D6A29D00843621 /* GACustomAlbumList.xib in Resources */,
 				E2F78B4721840A39005CA3F4 /* PureCamera.bundle in Resources */,
 				E2F78BB721846517005CA3F4 /* SVProgressHUD.bundle in Resources */,
 				E2D48B412183025300BD7EEF /* Assets.xcassets in Resources */,
-				E2D9B0DA229D1EF000CA0268 /* GACustomAlbumCell.xib in Resources */,
+				18FDA00423D6A29D00843621 /* GACustomAlbumCell.xib in Resources */,
+				18FD9FF923D6A29D00843621 /* CustomPicture.bundle in Resources */,
+				18FD9FFF23D6A29D00843621 /* GACustomAlbumDetails.xib in Resources */,
+				18FDA00523D6A29D00843621 /* GACustomSelectPICCell.xib in Resources */,
 				E2D48B3F2183025100BD7EEF /* Main.storyboard in Resources */,
 				E2D48BB121830A7300BD7EEF /* HomeViewController.xib in Resources */,
-				E2D9B0DC229D1EF000CA0268 /* GACustomSelectPICCell.xib in Resources */,
-				E2D9B0CE229D1EF000CA0268 /* GACustomAlbumDetails.xib in Resources */,
 				E2F78B5121840A39005CA3F4 /* TOCropViewControllerLocalizable.strings in Resources */,
-				E2D9B0D2229D1EF000CA0268 /* GACustomSelectPIC.xib in Resources */,
-				E2D9B0D3229D1EF000CA0268 /* CustomPicture.bundle in Resources */,
+				18FD9FFE23D6A29D00843621 /* GACustomSelectPIC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,38 +547,39 @@
 			files = (
 				E2F78B4921840A39005CA3F4 /* PureCropVC.m in Sources */,
 				E2F78B4621840A39005CA3F4 /* LLSimpleCamera.m in Sources */,
-				E2D9B0D9229D1EF000CA0268 /* GACustomAlbumCell.m in Sources */,
+				18FDA00323D6A29D00843621 /* GACustomAlbumCell.m in Sources */,
 				E2F78BB521846517005CA3F4 /* SVIndefiniteAnimatedView.m in Sources */,
-				E2D9B0D5229D1EF000CA0268 /* GACustomSelectPICModel.m in Sources */,
 				E2F78B4D21840A39005CA3F4 /* TOCropScrollView.m in Sources */,
+				18FD9FFD23D6A29D00843621 /* GABaseCustomViewController.m in Sources */,
+				18FDA00C23D6A95000843621 /* UIViewController+Present.m in Sources */,
 				E2F78B4F21840A39005CA3F4 /* TOCropView.m in Sources */,
 				E2F78B4521840A39005CA3F4 /* LLSimpleCamera+Helper.m in Sources */,
+				18FDA00923D6A45700843621 /* UIView+Toast.m in Sources */,
 				E2F78B5221840A39005CA3F4 /* TOCropViewControllerTransitioning.m in Sources */,
-				E2D9B0DB229D1EF000CA0268 /* GACustomSelectPICCell.m in Sources */,
+				18FDA00623D6A29D00843621 /* GACustomSelectPICCell.m in Sources */,
 				E2F78B5021840A39005CA3F4 /* TOCropViewController.m in Sources */,
 				E2F78B4A21840A39005CA3F4 /* TOActivityCroppedImageProvider.m in Sources */,
 				E2D48BAB2183067000BD7EEF /* ListViewController.m in Sources */,
 				E2D48B472183025300BD7EEF /* main.m in Sources */,
-				E2F693AB236EDF1A002462D4 /* UIViewController+Present.m in Sources */,
+				18FD9FF623D6A29D00843621 /* CALayer+XibBorderColor.m in Sources */,
+				18FDA00123D6A29D00843621 /* GACustomAlbumDetails.m in Sources */,
 				E2F78BB621846517005CA3F4 /* SVProgressAnimatedView.m in Sources */,
 				E2F78B5421840A39005CA3F4 /* UIImage+FixOrientation.m in Sources */,
-				E2D9B0D6229D1EF000CA0268 /* CALayer+XibBorderColor.m in Sources */,
-				E2D9B0D1229D1EF000CA0268 /* GACustomSelectPIC.m in Sources */,
-				E2D9B0CF229D1EF000CA0268 /* GACustomAlbumList.m in Sources */,
-				E2D9B0D4229D1EF000CA0268 /* GACustomAlbumModel.m in Sources */,
 				E2F78B4E21840A39005CA3F4 /* TOCropToolbar.m in Sources */,
-				E2D9B0D8229D1EF000CA0268 /* GASelectCountShare.m in Sources */,
+				18FD9FFB23D6A29D00843621 /* GACustomAlbumModel.m in Sources */,
 				E2F78B4C21840A39005CA3F4 /* TOCroppedImageAttributes.m in Sources */,
 				E2D48B392183025100BD7EEF /* AppDelegate.m in Sources */,
 				E2D48BB021830A7300BD7EEF /* HomeViewController.m in Sources */,
+				18FD9FF823D6A29D00843621 /* GAPublicMethod.m in Sources */,
+				18FDA00223D6A29D00843621 /* GACustomAlbumList.m in Sources */,
 				E2F78BB821846517005CA3F4 /* SVProgressHUD.m in Sources */,
-				E2D9B0D7229D1EF000CA0268 /* GAPublicMethod.m in Sources */,
-				E2D9B0CC229D1EF000CA0268 /* GABaseCustomViewController.m in Sources */,
-				E2D9B0CD229D1EF000CA0268 /* GACustomAlbumDetails.m in Sources */,
+				18FD9FF723D6A29D00843621 /* GASelectCountShare.m in Sources */,
+				18FD9FFA23D6A29D00843621 /* GACustomSelectPICModel.m in Sources */,
 				E2F78B4B21840A39005CA3F4 /* TOCropOverlayView.m in Sources */,
 				E2F78B4821840A39005CA3F4 /* PureCamera.m in Sources */,
 				E2F78B5321840A39005CA3F4 /* UIImage+CropRotate.m in Sources */,
 				E2F78BB921846517005CA3F4 /* SVRadialGradientLayer.m in Sources */,
+				18FDA00023D6A29D00843621 /* GACustomSelectPIC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

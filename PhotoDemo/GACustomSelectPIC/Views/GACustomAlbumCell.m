@@ -7,6 +7,7 @@
 //
 
 #import "GACustomAlbumCell.h"
+#import "UIView+Toast.h"
 
 @implementation GACustomAlbumCell
 
@@ -70,7 +71,7 @@
 
 - (void)assignmentTarget:(CGSize)target Asset:(PHAsset *)asset {
     [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:target contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        _imageView.image = result;
+        self->_imageView.image = result;
     }];
 }
 
@@ -109,6 +110,9 @@
             if (self.selectPicBlock) {
                 self.selectPicBlock(_dataModel);
             }
+        } else {
+            UIWindow *keWindow = [UIApplication sharedApplication].keyWindow;
+            [keWindow makeToast:[NSString stringWithFormat:@"最多只能选择%ld个对象",(long)shareCount.limitMaxNumber]];
         }
     }
 }

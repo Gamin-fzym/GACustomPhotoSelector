@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "GABaseCustomViewController.h"
+#import <Photos/Photos.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GACustomSelectPIC : GABaseCustomViewController
 
 @property (assign, nonatomic) NSInteger tempLimitMax; // 限制选择数量
+@property (assign, nonatomic) PHAssetMediaType selectMediaType; // 选择文件类型 图片、视频、音频
 
 @end
 

@@ -214,6 +214,12 @@
     [self dismissViewControllerAnimated:NO completion:^{
     }];
 }
+
+- (void)cropViewController:(nonnull TOCropViewController *)cropViewController didFinishCancelled:(BOOL)cancelled {
+    [cropViewController dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:NO completion:^{}];
+}
+
 - (BOOL)prefersStatusBarHidden
 {
     return YES;

@@ -123,6 +123,7 @@
 
 - (void)cropViewController:(nonnull TOCropViewController *)cropViewController didFinishCancelled:(BOOL)cancelled {
     [cropViewController dismissViewControllerAnimated:YES completion:nil];
+    [_ipc dismissViewControllerAnimated:NO completion:^{}];
 }
 
 #pragma mark - 自定义图片选择器
@@ -131,6 +132,7 @@
     GACustomSelectPIC *custom = [[GACustomSelectPIC alloc] initWithNibName:@"GACustomSelectPIC" bundle:nil];
     custom.delegate = self;
     custom.tempLimitMax = 5;
+    custom.selectMediaType = PHAssetMediaTypeImage;
     [self.navigationController pushViewController:custom animated:YES];
 }
 

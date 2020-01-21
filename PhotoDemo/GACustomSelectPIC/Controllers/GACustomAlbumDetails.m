@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //float aa =  [GAPublicMethod statusAndNavHeight];
     _topConstraint.constant = [GAPublicMethod statusAndNavHeight];
     [GAPublicMethod adaptationSafeAreaWith:_collectionView useArea:1];
     self.baseCollectionView = _collectionView;

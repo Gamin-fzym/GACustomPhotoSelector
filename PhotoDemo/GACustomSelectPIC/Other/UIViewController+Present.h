@@ -1,9 +1,9 @@
 //
 //  UIViewController+Present.h
-//  NewDemo
+//  WXReader
 //
-//  Created by Gamin on 2019/11/1.
-//  Copyright © 2019 Gamin. All rights reserved.
+//  Created by Andrew on 2019/10/9.
+//  Copyright © 2019 Andrew. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Present)
 
-// category中不能添加属性,所以使用运行时的方式处理
-@property (nonatomic, assign) BOOL GA_automaticallySetModalPresentationStyle;
+@property (nonatomic, assign) BOOL LL_automaticallySetModalPresentationStyle;
+
++ (BOOL)LL_automaticallySetModalPresentationStyle;
 
 @end
 

@@ -513,7 +513,7 @@
         [self.delegate cropViewController:self didFinishCancelled:YES];
         return;
     }
-    
+
     self.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }

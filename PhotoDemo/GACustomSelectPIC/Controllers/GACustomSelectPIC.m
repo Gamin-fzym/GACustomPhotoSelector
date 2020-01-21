@@ -7,11 +7,10 @@
 //
 
 #import "GACustomSelectPIC.h"
-#import <Photos/Photos.h>
-#import "SVProgressHUD.h"
 #import "GACustomSelectPICCell.h"
 #import "GACustomSelectPICModel.h"
 #import "GACustomAlbumList.h"
+#import "UIView+Toast.h"
 
 @interface GACustomSelectPIC () <UITableViewDelegate, UITableViewDataSource>
 
@@ -29,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"照片选择器";
+    
     [_tableView setSeparatorStyle:NO];
     _tableView.estimatedRowHeight = 100;
     _tableView.rowHeight = UITableViewAutomaticDimension;
@@ -39,7 +39,7 @@
             [self getAllAlbumInfo];
         } else {
             // 提示用户去打开授权
-            [SVProgressHUD showInfoWithStatus:@"进入设置界面->找到当前应用->打开允许访问相册开关"];
+            [self.view makeToast:@"进入设置界面->找到当前应用->打开允许访问相册开关"];
             return;
         }
     }];
@@ -70,10 +70,16 @@
         if (!(assets.count > 0)) {
             continue;
         }
+        NSMutableArray *selectMArr = [NSMutableArray new];
+        for (PHAsset *subAsset in assets) {
+            if (subAsset.mediaType == self.selectMediaType) {
+                [selectMArr addObject:subAsset];
+            }
+        }
         GACustomSelectPICModel *model = [GACustomSelectPICModel new];
         model.title = collectionTitle;
-        model.count = assets.count;
-        model.assetArray = assets;
+        model.count = selectMArr.count;
+        model.assetArray = selectMArr;
         [_dataMArr addObject:model];
     }
     dispatch_async(dispatch_get_main_queue(), ^{
